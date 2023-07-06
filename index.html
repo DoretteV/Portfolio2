@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+
+    body {
+    background-image: url('oldpaper2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%
+}
+
+ /* Set gray background color and 100% height */
+ .sidenav {
+      background-image: url(coding.png);
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">>
+      <h4 style="color: black; font-size: 65px;">Dorette's Blog</h4>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#section1">Home</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul><br>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search Blog..">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-sm-9">
+      <h4><small>RECENT POSTS</small></h4>
+      <hr>
+      <h2>I Love Coding</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by Dorette, Jun 19, 2023.</h5>
+      <h5><span class="label label-danger">HTML</span> <span class="label label-primary">CSS</span></h5><br>
+      <p>Today is my first day in the Intro to Coding class @Codecollege. Im very excited about this journey but also very nervous and anxious. I cant wait to learn new stuff and broaden my knowledge.</p>
+      <br><br>
+      
+      <h4><small>RECENT POSTS</small></h4>
+      <hr>
+      <h2>Officially Blogging</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by Dorette, Jul 04, 2023.</h5>
+      <h5><span class="label label-success">JavaScript</span></h5><br>
+      <p>We are almost done with this Intro course. I have learnt so much. We have done a lot of work that includes a couple of projects. Check out some of my work in the work folder.</p>
+      <hr>
+
+      <h4>Leave a Comment:</h4>
+      <form role="form">
+        <div class="form-group">
+          <textarea class="form-control" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+      <br><br>
+      
+      <p><span class="badge">2</span> Comments:</p><br>
+      
+      <div class="row">
+        <div class="col-sm-10">
+          <h4>Pierre <small>Jul 05, 2023, 08:12 AM</small></h4>
+          <p>Keep up the GREAT work! I am cheering for you!!</p>
+          <br>
+        </div>
+        <div class="col-sm-10">
+          <h4>Jane <small>Jul 05, 2023, 8:25 AM</small></h4>
+          <p>I am so happy for you man! Finally. I am looking forward to read about your coding.</p>
+          <br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid">
+  <p>Footer Text</p>
+</footer>
+
+</body>
+</html>
